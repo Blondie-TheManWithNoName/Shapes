@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> SHAPES
+	</title>
+	<link rel="icon" type="image/x-icon" href="/rsc/icon.png" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<header>
+	<h1 class="text" >Shapes</h1>
+	<h2 class="text" id="sizeTableText">5 X 5</h2>
+</header>
+<body id="body">
+	<div id="table"></div>
+	<div id="outer">
+		<button onclick="darkLightMode(this)" class="button">&#9789</button>
+		<button onclick="shadowMode()" class="button">&#10697</button>
+		<button onclick="changeColor()" class="button">1</button>
+		<div class="colorMenu">
+			<button class="colorButton button" id="Re" onclick="toggleColor(0)"></button>
+			<button class="colorButton button" id="Gr" onclick="toggleColor(1)"></button>
+			<button class="colorButton button" id="Bl" onclick="toggleColor(2)"></button>
+			<button class="colorButton button" id="Or" onclick="toggleColor(3)"></button>
+			<button class="colorButton button" id="Ye" onclick="toggleColor(4)"></button>
+		</div>
+	</div>
+</body>
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,202 @@
+.shape.square
+{
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	/*border-radius: 100%;*/
+	/*box-shadow: 20px 20px 20px 20px rgba(0,0,0,0.25);*/
+	box-shadow: 12.5px 12.5px 0px rgba(0,0,0,0.25);
+	webkit-box-shadow: 40px 40px 0px 0px rgba(0,0,0,0.75);
+}
+.shape.triangle
+{
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid rgb(149, 165, 166);
+	filter: drop-shadow(12.5px 12.5px 0px rgba(0, 0, 0, 0.25));
+}
+.shape
+{
+	width: 50px;
+	height: 50px;
+	/*border-radius: 25%;*/
+	/*transform: rotate(90deg);*/
+	box-shadow: 12.5px 12.5px 0px rgba(0,0,0,0.25);
+	transition: 0.5s;
+	background-color: rgb(149, 165, 166);
+}
+.shape.style
+{
+	background-color: none;
+
+}
+.shape.circle
+{
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	border-radius: 100%;
+	background-color: rgb(149, 165, 166);
+	/*box-shadow: 20px 20px 20px 20px rgba(0,0,0,0.25);*/
+	box-shadow: 12.5px 12.5px 0px 2.5px rgba(0,0,0,0.25);
+	webkit-box-shadow: 40px 40px 0px 0px rgba(0,0,0,0.75);
+}
+
+.shape.square.activated
+{
+
+	table-layout: fixed;
+	width: 125px;
+	height: 125px;
+}
+
+.shape.circle.activated
+{
+
+	table-layout: fixed;
+	width: 125px;
+	height: 125px;
+}
+
+.shape.triangle.activated
+{
+	border-left: 62.5px solid transparent;
+	border-right: 62.5px solid transparent;
+	border-bottom: 125px solid rgb(149, 165, 166);
+	table-layout: fixed;
+}
+table
+{
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	table-layout: initial;
+	border-spacing: 0rem;
+	background-color: none;
+	cursor: pointer;
+	/*border: 2px solid #ddd;*/
+}
+
+td
+{
+	/*border: 1px solid #ddd;*/
+	white-space: nowrap;
+	overflow: hidden;
+	/*padding: 2.2vw;*/
+	padding: 2.5rem;
+	transition: 0.5s;
+}
+td.activated
+{
+	padding: 0;
+}
+
+body
+{
+	/*cursor: pointer;*/
+	transition: 1s;
+	background-color: #ecf0f1;
+}
+body.dark
+{
+	background-color: #2d3436;
+}
+button
+{
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 200%;
+	border: none;
+	width: 5vw;
+	height: 5vw;
+	transition: 1s;
+	padding: 10px;
+	margin: 2%;
+	background-color: #ecf0f1;
+	border-radius: 50%;
+}
+#outer
+{
+	width: 100%;
+	text-align: center;
+}
+button:hover
+{
+	cursor: pointer;
+	background-color: #95a5a6;
+}
+
+button.darkMode
+{
+	background-color: #2d3436;
+}
+button.darkMode:hover
+{
+	background-color: #2c3e50;
+}
+
+.text
+{
+	font-family: Roboto;
+	text-transform: uppercase;
+	text-align: center;
+	color: #2d3436;
+	transition: 1s;
+	user-select: none;
+}
+h1
+{
+	letter-spacing: 2vw;
+	font-size: 7.5vw;
+	/*text-shadow: 5px 5px rgba(0,0,10,0.25);*/
+}
+h2
+{
+	padding-top: 100px;
+	font-size: 75px;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("rsc/Roboto-Thin.ttf");
+}
+
+.timer
+{
+	font-size: 200px;
+}
+
+.stats
+{
+	height: 48px;
+	width: 0px;
+	font-weight: bold;
+	font-size: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	transition: 1s;
+}
+
+.colorButton
+{
+	background-color: #ecf0f1;
+	transition: 0.35s;
+}
+
+.colorButton:hover
+{
+	box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.25);
+}
+.colorButton.activated:hover
+{
+	opacity: 1;
+}
+
+.colorButton.darkMode.activated
+{
+
+	background-color: #2c3e50;
+}
